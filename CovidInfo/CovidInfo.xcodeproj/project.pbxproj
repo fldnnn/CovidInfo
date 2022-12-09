@@ -13,6 +13,15 @@
 		316B908729427BE20062DBC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316B908529427BE20062DBC3 /* Main.storyboard */; };
 		316B908929427BE70062DBC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316B908829427BE70062DBC3 /* Assets.xcassets */; };
 		316B908C29427BE70062DBC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316B908A29427BE70062DBC3 /* LaunchScreen.storyboard */; };
+		316B909829429BD00062DBC3 /* CountrySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B909729429BD00062DBC3 /* CountrySelectionViewController.swift */; };
+		316B909A29429BE60062DBC3 /* CountrySelectionContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B909929429BE60062DBC3 /* CountrySelectionContract.swift */; };
+		316B909C29429BF70062DBC3 /* CountrySelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B909B29429BF70062DBC3 /* CountrySelectionInteractor.swift */; };
+		316B909E29429C020062DBC3 /* CountrySelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B909D29429C020062DBC3 /* CountrySelectionPresenter.swift */; };
+		316B90A029429C0B0062DBC3 /* CountrySelectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B909F29429C0B0062DBC3 /* CountrySelectionRouter.swift */; };
+		316B90A429429CFE0062DBC3 /* CountrySelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B90A229429CFE0062DBC3 /* CountrySelectionTableViewCell.swift */; };
+		316B90A529429CFE0062DBC3 /* CountrySelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 316B90A329429CFE0062DBC3 /* CountrySelectionTableViewCell.xib */; };
+		316B90A82942A2220062DBC3 /* CountrySelectionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B90A72942A2220062DBC3 /* CountrySelectionEntity.swift */; };
+		316B90AB2942B1CC0062DBC3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 316B90AA2942B1CC0062DBC3 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,14 @@
 		316B908829427BE70062DBC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		316B908B29427BE70062DBC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		316B908D29427BE70062DBC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		316B909729429BD00062DBC3 /* CountrySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionViewController.swift; sourceTree = "<group>"; };
+		316B909929429BE60062DBC3 /* CountrySelectionContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionContract.swift; sourceTree = "<group>"; };
+		316B909B29429BF70062DBC3 /* CountrySelectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionInteractor.swift; sourceTree = "<group>"; };
+		316B909D29429C020062DBC3 /* CountrySelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionPresenter.swift; sourceTree = "<group>"; };
+		316B909F29429C0B0062DBC3 /* CountrySelectionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionRouter.swift; sourceTree = "<group>"; };
+		316B90A229429CFE0062DBC3 /* CountrySelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionTableViewCell.swift; sourceTree = "<group>"; };
+		316B90A329429CFE0062DBC3 /* CountrySelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountrySelectionTableViewCell.xib; sourceTree = "<group>"; };
+		316B90A72942A2220062DBC3 /* CountrySelectionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				316B90AB2942B1CC0062DBC3 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +88,7 @@
 		316B909329427C440062DBC3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				316B909629429B830062DBC3 /* CountrySelection */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -91,6 +110,37 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		316B909629429B830062DBC3 /* CountrySelection */ = {
+			isa = PBXGroup;
+			children = (
+				316B90A62942A2050062DBC3 /* CountrySelectionEntity */,
+				316B90A129429CDB0062DBC3 /* Cell */,
+				316B909729429BD00062DBC3 /* CountrySelectionViewController.swift */,
+				316B909929429BE60062DBC3 /* CountrySelectionContract.swift */,
+				316B909B29429BF70062DBC3 /* CountrySelectionInteractor.swift */,
+				316B909D29429C020062DBC3 /* CountrySelectionPresenter.swift */,
+				316B909F29429C0B0062DBC3 /* CountrySelectionRouter.swift */,
+			);
+			path = CountrySelection;
+			sourceTree = "<group>";
+		};
+		316B90A129429CDB0062DBC3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				316B90A229429CFE0062DBC3 /* CountrySelectionTableViewCell.swift */,
+				316B90A329429CFE0062DBC3 /* CountrySelectionTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		316B90A62942A2050062DBC3 /* CountrySelectionEntity */ = {
+			isa = PBXGroup;
+			children = (
+				316B90A72942A2220062DBC3 /* CountrySelectionEntity.swift */,
+			);
+			path = CountrySelectionEntity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +157,9 @@
 			dependencies = (
 			);
 			name = CovidInfo;
+			packageProductDependencies = (
+				316B90AA2942B1CC0062DBC3 /* Alamofire */,
+			);
 			productName = CovidInfo;
 			productReference = 316B907C29427BE20062DBC3 /* CovidInfo.app */;
 			productType = "com.apple.product-type.application";
@@ -135,6 +188,9 @@
 				Base,
 			);
 			mainGroup = 316B907329427BE20062DBC3;
+			packageReferences = (
+				316B90A92942B1CC0062DBC3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 316B907D29427BE20062DBC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -150,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				316B908C29427BE70062DBC3 /* LaunchScreen.storyboard in Resources */,
+				316B90A529429CFE0062DBC3 /* CountrySelectionTableViewCell.xib in Resources */,
 				316B908929427BE70062DBC3 /* Assets.xcassets in Resources */,
 				316B908729427BE20062DBC3 /* Main.storyboard in Resources */,
 			);
@@ -162,8 +219,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				316B909C29429BF70062DBC3 /* CountrySelectionInteractor.swift in Sources */,
+				316B909829429BD00062DBC3 /* CountrySelectionViewController.swift in Sources */,
+				316B90A029429C0B0062DBC3 /* CountrySelectionRouter.swift in Sources */,
 				316B908429427BE20062DBC3 /* ViewController.swift in Sources */,
+				316B90A429429CFE0062DBC3 /* CountrySelectionTableViewCell.swift in Sources */,
 				316B908029427BE20062DBC3 /* AppDelegate.swift in Sources */,
+				316B909A29429BE60062DBC3 /* CountrySelectionContract.swift in Sources */,
+				316B909E29429C020062DBC3 /* CountrySelectionPresenter.swift in Sources */,
+				316B90A82942A2220062DBC3 /* CountrySelectionEntity.swift in Sources */,
 				316B908229427BE20062DBC3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +448,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		316B90A92942B1CC0062DBC3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		316B90AA2942B1CC0062DBC3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 316B90A92942B1CC0062DBC3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 316B907429427BE20062DBC3 /* Project object */;
 }
