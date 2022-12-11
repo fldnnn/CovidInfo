@@ -27,7 +27,14 @@ class CountrySelectionViewController: UIViewController {
 
         countrySelectionTableView.register(UINib(nibName: "CountrySelectionTableViewCell", bundle: nil), forCellReuseIdentifier: "CountrySelectionTableViewCell")
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetail" {
+            if let country = sender as? Country {
+                let detailVC = segue.destination as! DetailRecoveredViewController
+                detailVC.country = country
+            }
+        }
+    }
 }
 
 extension CountrySelectionViewController: PresenterToViewCountrySelectionProcotol {
@@ -63,7 +70,14 @@ extension CountrySelectionViewController: UITableViewDelegate, UITableViewDataSo
         
         return cell
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         120
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let country = countryList[indexPath.row]
+        performSegue(withIdentifier: "toDetail", sender: country)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

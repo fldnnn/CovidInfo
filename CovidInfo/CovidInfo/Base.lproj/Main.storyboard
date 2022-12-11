@@ -40,11 +40,28 @@
                     <connections>
                         <outlet property="countrySelectionSearchBar" destination="ImN-at-bzI" id="HRz-Lk-Cgp"/>
                         <outlet property="countrySelectionTableView" destination="L3R-NU-FYF" id="rP1-Xd-LuU"/>
+                        <segue destination="vAp-Q9-vUY" kind="show" identifier="toDetail" id="unz-XU-rua"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="94"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EFB-3C-3ex">
+            <objects>
+                <viewController id="vAp-Q9-vUY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vzN-dR-Gd9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Sn9-Me-oiB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Evo-Du-ETU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qvl-Aq-P1j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="94"/>
         </scene>
     </scenes>
     <resources>
