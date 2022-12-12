@@ -66,9 +66,9 @@ extension CountrySelectionViewController: UITableViewDelegate, UITableViewDataSo
         let cell = tableView.dequeueReusableCell(withIdentifier: "CountrySelectionTableViewCell", for: indexPath) as! CountrySelectionTableViewCell
         
         cell.countryNameLabel.text = country.iso3166_1
-        cell.confirmedCountLabel.text = "Confirmed: \(country.cnt_confirmed ?? 0)"
-        cell.recoveredCountLabel.text = "Recovered: \(country.cnt_recovered ?? 0)"
-        cell.deathCountLabel.text = "Death: \(country.cnt_death ?? 0)"
+        cell.confirmedCountLabel.text = "\(country.cnt_confirmed ?? 0)"
+        cell.recoveredCountLabel.text = "\(country.cnt_recovered ?? 0)"
+        cell.deathCountLabel.text = "\(country.cnt_death ?? 0)"
         
         return cell
     }

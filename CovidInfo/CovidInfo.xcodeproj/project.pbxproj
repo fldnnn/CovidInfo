@@ -30,6 +30,13 @@
 		316B90B9294621880062DBC3 /* DetailRecoveredEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B90B8294621880062DBC3 /* DetailRecoveredEntity.swift */; };
 		316B90BB294639970062DBC3 /* DetalRecoveredData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B90BA294639970062DBC3 /* DetalRecoveredData.swift */; };
 		316B90BE294645590062DBC3 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 316B90BD294645590062DBC3 /* Charts */; };
+		31BCD98A2946C86400FCC906 /* DetailDeathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD9892946C86400FCC906 /* DetailDeathViewController.swift */; };
+		31BCD98C2946C89A00FCC906 /* DetailDeathContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD98B2946C89A00FCC906 /* DetailDeathContract.swift */; };
+		31BCD98E2946C8B500FCC906 /* DetailDeathInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD98D2946C8B500FCC906 /* DetailDeathInteractor.swift */; };
+		31BCD9902946C8BE00FCC906 /* DetailDeathPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD98F2946C8BE00FCC906 /* DetailDeathPresenter.swift */; };
+		31BCD9922946C8C700FCC906 /* DetailDeathRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD9912946C8C700FCC906 /* DetailDeathRouter.swift */; };
+		31BCD9952946C8EB00FCC906 /* DetailDeathEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD9942946C8EB00FCC906 /* DetailDeathEntity.swift */; };
+		31BCD9982946CE8800FCC906 /* AMChart in Frameworks */ = {isa = PBXBuildFile; productRef = 31BCD9972946CE8800FCC906 /* AMChart */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +63,12 @@
 		316B90B52946214E0062DBC3 /* DetailRecoveredRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecoveredRouter.swift; sourceTree = "<group>"; };
 		316B90B8294621880062DBC3 /* DetailRecoveredEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecoveredEntity.swift; sourceTree = "<group>"; };
 		316B90BA294639970062DBC3 /* DetalRecoveredData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalRecoveredData.swift; sourceTree = "<group>"; };
+		31BCD9892946C86400FCC906 /* DetailDeathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeathViewController.swift; sourceTree = "<group>"; };
+		31BCD98B2946C89A00FCC906 /* DetailDeathContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeathContract.swift; sourceTree = "<group>"; };
+		31BCD98D2946C8B500FCC906 /* DetailDeathInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeathInteractor.swift; sourceTree = "<group>"; };
+		31BCD98F2946C8BE00FCC906 /* DetailDeathPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeathPresenter.swift; sourceTree = "<group>"; };
+		31BCD9912946C8C700FCC906 /* DetailDeathRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeathRouter.swift; sourceTree = "<group>"; };
+		31BCD9942946C8EB00FCC906 /* DetailDeathEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeathEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31BCD9982946CE8800FCC906 /* AMChart in Frameworks */,
 				316B90AB2942B1CC0062DBC3 /* Alamofire in Frameworks */,
 				316B90BE294645590062DBC3 /* Charts in Frameworks */,
 			);
@@ -104,6 +118,7 @@
 		316B909329427C440062DBC3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				31BCD9882946C80900FCC906 /* DetailDeath */,
 				316B90AC2946203B0062DBC3 /* DetailRecovered */,
 				316B909629429B830062DBC3 /* CountrySelection */,
 			);
@@ -180,6 +195,27 @@
 			path = DetailRecoveredEntity;
 			sourceTree = "<group>";
 		};
+		31BCD9882946C80900FCC906 /* DetailDeath */ = {
+			isa = PBXGroup;
+			children = (
+				31BCD9932946C8CF00FCC906 /* DetailDeathEntity */,
+				31BCD9892946C86400FCC906 /* DetailDeathViewController.swift */,
+				31BCD98B2946C89A00FCC906 /* DetailDeathContract.swift */,
+				31BCD98D2946C8B500FCC906 /* DetailDeathInteractor.swift */,
+				31BCD98F2946C8BE00FCC906 /* DetailDeathPresenter.swift */,
+				31BCD9912946C8C700FCC906 /* DetailDeathRouter.swift */,
+			);
+			path = DetailDeath;
+			sourceTree = "<group>";
+		};
+		31BCD9932946C8CF00FCC906 /* DetailDeathEntity */ = {
+			isa = PBXGroup;
+			children = (
+				31BCD9942946C8EB00FCC906 /* DetailDeathEntity.swift */,
+			);
+			path = DetailDeathEntity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,6 +235,7 @@
 			packageProductDependencies = (
 				316B90AA2942B1CC0062DBC3 /* Alamofire */,
 				316B90BD294645590062DBC3 /* Charts */,
+				31BCD9972946CE8800FCC906 /* AMChart */,
 			);
 			productName = CovidInfo;
 			productReference = 316B907C29427BE20062DBC3 /* CovidInfo.app */;
@@ -231,6 +268,7 @@
 			packageReferences = (
 				316B90A92942B1CC0062DBC3 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				316B90BC294645590062DBC3 /* XCRemoteSwiftPackageReference "Charts" */,
+				31BCD9962946CE8800FCC906 /* XCRemoteSwiftPackageReference "AMChart" */,
 			);
 			productRefGroup = 316B907D29427BE20062DBC3 /* Products */;
 			projectDirPath = "";
@@ -262,16 +300,22 @@
 			files = (
 				316B90B2294621350062DBC3 /* DetailRecoveredInteractor.swift in Sources */,
 				316B909C29429BF70062DBC3 /* CountrySelectionInteractor.swift in Sources */,
+				31BCD98E2946C8B500FCC906 /* DetailDeathInteractor.swift in Sources */,
 				316B909829429BD00062DBC3 /* CountrySelectionViewController.swift in Sources */,
 				316B90A029429C0B0062DBC3 /* CountrySelectionRouter.swift in Sources */,
+				31BCD98C2946C89A00FCC906 /* DetailDeathContract.swift in Sources */,
 				316B908429427BE20062DBC3 /* ViewController.swift in Sources */,
 				316B90B9294621880062DBC3 /* DetailRecoveredEntity.swift in Sources */,
 				316B90A429429CFE0062DBC3 /* CountrySelectionTableViewCell.swift in Sources */,
 				316B908029427BE20062DBC3 /* AppDelegate.swift in Sources */,
+				31BCD9922946C8C700FCC906 /* DetailDeathRouter.swift in Sources */,
+				31BCD98A2946C86400FCC906 /* DetailDeathViewController.swift in Sources */,
+				31BCD9902946C8BE00FCC906 /* DetailDeathPresenter.swift in Sources */,
 				316B909A29429BE60062DBC3 /* CountrySelectionContract.swift in Sources */,
 				316B90AE2946206D0062DBC3 /* DetailRecoveredViewController.swift in Sources */,
 				316B90B0294621290062DBC3 /* DetailRecoveredContract.swift in Sources */,
 				316B909E29429C020062DBC3 /* CountrySelectionPresenter.swift in Sources */,
+				31BCD9952946C8EB00FCC906 /* DetailDeathEntity.swift in Sources */,
 				316B90B4294621420062DBC3 /* DetailRecoveredPresenter.swift in Sources */,
 				316B90BB294639970062DBC3 /* DetalRecoveredData.swift in Sources */,
 				316B90A82942A2220062DBC3 /* CountrySelectionEntity.swift in Sources */,
@@ -514,6 +558,14 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		31BCD9962946CE8800FCC906 /* XCRemoteSwiftPackageReference "AMChart" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adventam10/AMChart";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -526,6 +578,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 316B90BC294645590062DBC3 /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
+		};
+		31BCD9972946CE8800FCC906 /* AMChart */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31BCD9962946CE8800FCC906 /* XCRemoteSwiftPackageReference "AMChart" */;
+			productName = AMChart;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

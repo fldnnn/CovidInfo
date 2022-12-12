@@ -72,6 +72,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="yMb-df-S4b"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ae8-2S-yGa">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -84,17 +85,17 @@
             </objects>
             <point key="canvasLocation" x="1734.7826086956522" y="93.75"/>
         </scene>
-        <!--Item-->
+        <!--Death-->
         <scene sceneID="Wt4-Im-sJl">
             <objects>
-                <viewController id="89z-SC-PWX" sceneMemberID="viewController">
+                <viewController id="89z-SC-PWX" customClass="DetailDeathViewController" customModule="CovidInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aRp-fG-eQn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="88f-SS-2ow"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="He9-Qd-46g"/>
+                    <tabBarItem key="tabBarItem" title="Death" image="heart.slash" catalog="system" selectedImage="heart.slash" id="He9-Qd-46g"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2B3-fd-WR6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,7 +104,6 @@
         <!--Navigation Controller-->
         <scene sceneID="SHl-01-Fsl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TOe-Ck-qBi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uaj-58-3B4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GmR-wx-iat">
@@ -115,12 +115,14 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ogI-cd-uep"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TOe-Ck-qBi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>
     </scenes>
     <resources>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.slash" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

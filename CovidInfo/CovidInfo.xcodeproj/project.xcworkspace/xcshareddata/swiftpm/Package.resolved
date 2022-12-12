@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "AMChart",
+        "repositoryURL": "https://github.com/adventam10/AMChart",
+        "state": {
+          "branch": null,
+          "revision": "2dc744302f65eda4ac78bd2624e4dcdad1365dae",
+          "version": "2.3.3"
+        }
+      },
+      {
         "package": "Charts",
         "repositoryURL": "https://github.com/danielgindi/Charts.git",
         "state": {
