@@ -80,6 +80,7 @@
                         <segue destination="vAp-Q9-vUY" kind="relationship" relationship="viewControllers" id="GTg-L0-e3b"/>
                         <segue destination="89z-SC-PWX" kind="relationship" relationship="viewControllers" id="pg2-Hd-fLq"/>
                         <segue destination="uAo-1j-kaT" kind="relationship" relationship="viewControllers" id="XCb-35-zAk"/>
+                        <segue destination="1W9-hx-Ayn" kind="relationship" relationship="viewControllers" id="MZm-wT-H1p"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncO-oZ-lQn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -100,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2B3-fd-WR6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1735" y="830"/>
+            <point key="canvasLocation" x="929" y="881"/>
         </scene>
         <!--Confirmed-->
         <scene sceneID="5tG-DL-exc">
@@ -116,7 +117,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HU4-Oi-hsw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2555" y="830"/>
+            <point key="canvasLocation" x="1735" y="881"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="BRz-Mg-QuD">
+            <objects>
+                <viewController id="1W9-hx-Ayn" customClass="CountryMapViewController" customModule="CovidInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yrv-rh-Y2r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-g7-g48">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kvF-iH-kFK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kvF-iH-kFK" firstAttribute="trailing" secondItem="hKC-g7-g48" secondAttribute="trailing" id="0nk-y3-Cng"/>
+                            <constraint firstItem="hKC-g7-g48" firstAttribute="top" secondItem="kvF-iH-kFK" secondAttribute="top" id="8Xn-c9-oD4"/>
+                            <constraint firstItem="kvF-iH-kFK" firstAttribute="bottom" secondItem="hKC-g7-g48" secondAttribute="bottom" id="ce1-wC-1el"/>
+                            <constraint firstItem="hKC-g7-g48" firstAttribute="leading" secondItem="kvF-iH-kFK" secondAttribute="leading" id="dj2-Y9-Y7O"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="ZMR-Jd-CmO"/>
+                    <connections>
+                        <outlet property="mapView" destination="hKC-g7-g48" id="GO9-sT-h9d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aBo-Mb-ukB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2532" y="881"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SHl-01-Fsl">
@@ -140,6 +171,7 @@
     <resources>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="heart.slash" catalog="system" width="128" height="115"/>
+        <image name="map" catalog="system" width="128" height="110"/>
         <image name="thermometer" catalog="system" width="81" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

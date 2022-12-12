@@ -19,17 +19,18 @@ class DetailRecoveredInteractor: PresenterToInteractorDetailRecoveredProcotol {
                 do {
                     let response = try JSONDecoder().decode(CountryDetail.self, from: data)
                     
-                        guard let classification = response.classifications else {return}
-                        var countryCode: [Code]?
-                        for countryDetail in classification {
-                            countryCode = countryDetail.codes?.filter({
-                                $0.name == country.iso3166_1
-                            })
-                        }
+                    guard let classification = response.classifications else {return}
+                    var countryCode: [Code]?
+                    for countryDetail in classification {
+                        countryCode = countryDetail.codes?.filter({
+                            $0.name == country.iso3166_1
+                        })
+                    }
                     self.codeValue = countryCode?.first?.codeValue
                     if let codeValue = self.codeValue {
                         self.getRecoveredData(with: codeValue)
                         UserDefaults.standard.set(codeValue, forKey: "codeValue")
+                        UserDefaults.standard.synchronize()
                     }
                 }catch{
                     print(error.localizedDescription)
@@ -53,9 +54,5 @@ class DetailRecoveredInteractor: PresenterToInteractorDetailRecoveredProcotol {
                 }
             }
         }
-        
-        //https://public.richdataservices.com/rds/api/query/covid19/jhu_country/tabulate?dims=year_stamp,cnt_recovered&groupby=year_stamp&measure=cnt_recovered:SUM(cnt_recovered)&where=(iso3166_1=AF)&orderby=year_stamp ASC&format=amcharts&limit=5000
-        
-        //https://public.richdataservices.com/rds/api/query/covid19/jhu_country/select?cols=date_stamp,cnt_confirmed,cnt_death,cnt_recovered&where=(iso3166_1=\(codeValue!))&format=amcharts&limit=5000
     }
 }

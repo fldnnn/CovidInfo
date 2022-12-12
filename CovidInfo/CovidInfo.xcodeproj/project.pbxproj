@@ -43,6 +43,7 @@
 		31BCD9A22946FA2600FCC906 /* DetailConfirmedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD9A12946FA2600FCC906 /* DetailConfirmedInteractor.swift */; };
 		31BCD9A42946FA3400FCC906 /* DetailConfirmedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD9A32946FA3400FCC906 /* DetailConfirmedPresenter.swift */; };
 		31BCD9A62946FA3F00FCC906 /* DetailConfirmedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD9A52946FA3F00FCC906 /* DetailConfirmedRouter.swift */; };
+		31BCD9A9294706FC00FCC906 /* CountryMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD9A8294706FC00FCC906 /* CountryMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		31BCD9A12946FA2600FCC906 /* DetailConfirmedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConfirmedInteractor.swift; sourceTree = "<group>"; };
 		31BCD9A32946FA3400FCC906 /* DetailConfirmedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConfirmedPresenter.swift; sourceTree = "<group>"; };
 		31BCD9A52946FA3F00FCC906 /* DetailConfirmedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConfirmedRouter.swift; sourceTree = "<group>"; };
+		31BCD9A8294706FC00FCC906 /* CountryMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		316B909329427C440062DBC3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				31BCD9A72947063B00FCC906 /* CountryMap */,
 				31BCD9992946F9BD00FCC906 /* DetailConfirmed */,
 				31BCD9882946C80900FCC906 /* DetailDeath */,
 				316B90AC2946203B0062DBC3 /* DetailRecovered */,
@@ -250,6 +253,14 @@
 			path = DetailConfirmedEntity;
 			sourceTree = "<group>";
 		};
+		31BCD9A72947063B00FCC906 /* CountryMap */ = {
+			isa = PBXGroup;
+			children = (
+				31BCD9A8294706FC00FCC906 /* CountryMapViewController.swift */,
+			);
+			path = CountryMap;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -334,6 +345,7 @@
 			files = (
 				316B90B2294621350062DBC3 /* DetailRecoveredInteractor.swift in Sources */,
 				31BCD99E2946FA0500FCC906 /* DetailConfirmedViewController.swift in Sources */,
+				31BCD9A9294706FC00FCC906 /* CountryMapViewController.swift in Sources */,
 				316B909C29429BF70062DBC3 /* CountrySelectionInteractor.swift in Sources */,
 				31BCD9A42946FA3400FCC906 /* DetailConfirmedPresenter.swift in Sources */,
 				31BCD98E2946C8B500FCC906 /* DetailDeathInteractor.swift in Sources */,
