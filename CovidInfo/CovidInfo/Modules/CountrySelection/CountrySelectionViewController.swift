@@ -30,8 +30,10 @@ class CountrySelectionViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetail" {
             if let country = sender as? Country {
-                let detailVC = segue.destination as! DetailRecoveredViewController
+                let barVC = segue.destination as! UITabBarController
+                let detailVC = barVC.viewControllers![0] as! DetailRecoveredViewController
                 detailVC.country = country
+                navigationItem.backButtonTitle = country.iso3166_1
             }
         }
     }

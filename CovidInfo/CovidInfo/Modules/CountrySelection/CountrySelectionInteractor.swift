@@ -17,7 +17,6 @@ class CountrySelectionInteractor: PresenterToInteractorCountrySelectionProcotol 
             if let data = response.data {
                 do {
                     let response = try JSONDecoder().decode(Countries.self, from: data)
-                    print(response)
                     DispatchQueue.main.async {
                         guard let dataProvider = response.dataProvider else {return}
                         self.countrySelectionPresenter?.didDataFetch(with: dataProvider)
@@ -35,7 +34,6 @@ class CountrySelectionInteractor: PresenterToInteractorCountrySelectionProcotol 
             if let data = response.data {
                 do {
                     let response = try JSONDecoder().decode(Countries.self, from: data)
-                    print(response)
                     var searchedCountry = [Country]()
                     guard let dataProvider = response.dataProvider else {return}
                     for country in dataProvider {

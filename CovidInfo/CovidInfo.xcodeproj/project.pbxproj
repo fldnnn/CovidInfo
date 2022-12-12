@@ -22,6 +22,14 @@
 		316B90A529429CFE0062DBC3 /* CountrySelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 316B90A329429CFE0062DBC3 /* CountrySelectionTableViewCell.xib */; };
 		316B90A82942A2220062DBC3 /* CountrySelectionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B90A72942A2220062DBC3 /* CountrySelectionEntity.swift */; };
 		316B90AB2942B1CC0062DBC3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 316B90AA2942B1CC0062DBC3 /* Alamofire */; };
+		316B90AE2946206D0062DBC3 /* DetailRecoveredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B90AD2946206D0062DBC3 /* DetailRecoveredViewController.swift */; };
+		316B90B0294621290062DBC3 /* DetailRecoveredContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B90AF294621290062DBC3 /* DetailRecoveredContract.swift */; };
+		316B90B2294621350062DBC3 /* DetailRecoveredInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B90B1294621350062DBC3 /* DetailRecoveredInteractor.swift */; };
+		316B90B4294621420062DBC3 /* DetailRecoveredPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B90B3294621420062DBC3 /* DetailRecoveredPresenter.swift */; };
+		316B90B62946214E0062DBC3 /* DetailRecoveredRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B90B52946214E0062DBC3 /* DetailRecoveredRouter.swift */; };
+		316B90B9294621880062DBC3 /* DetailRecoveredEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B90B8294621880062DBC3 /* DetailRecoveredEntity.swift */; };
+		316B90BB294639970062DBC3 /* DetalRecoveredData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316B90BA294639970062DBC3 /* DetalRecoveredData.swift */; };
+		316B90BE294645590062DBC3 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 316B90BD294645590062DBC3 /* Charts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +49,13 @@
 		316B90A229429CFE0062DBC3 /* CountrySelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionTableViewCell.swift; sourceTree = "<group>"; };
 		316B90A329429CFE0062DBC3 /* CountrySelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountrySelectionTableViewCell.xib; sourceTree = "<group>"; };
 		316B90A72942A2220062DBC3 /* CountrySelectionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionEntity.swift; sourceTree = "<group>"; };
+		316B90AD2946206D0062DBC3 /* DetailRecoveredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecoveredViewController.swift; sourceTree = "<group>"; };
+		316B90AF294621290062DBC3 /* DetailRecoveredContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecoveredContract.swift; sourceTree = "<group>"; };
+		316B90B1294621350062DBC3 /* DetailRecoveredInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecoveredInteractor.swift; sourceTree = "<group>"; };
+		316B90B3294621420062DBC3 /* DetailRecoveredPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecoveredPresenter.swift; sourceTree = "<group>"; };
+		316B90B52946214E0062DBC3 /* DetailRecoveredRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecoveredRouter.swift; sourceTree = "<group>"; };
+		316B90B8294621880062DBC3 /* DetailRecoveredEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecoveredEntity.swift; sourceTree = "<group>"; };
+		316B90BA294639970062DBC3 /* DetalRecoveredData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalRecoveredData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				316B90AB2942B1CC0062DBC3 /* Alamofire in Frameworks */,
+				316B90BE294645590062DBC3 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +104,7 @@
 		316B909329427C440062DBC3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				316B90AC2946203B0062DBC3 /* DetailRecovered */,
 				316B909629429B830062DBC3 /* CountrySelection */,
 			);
 			path = Modules;
@@ -141,6 +158,28 @@
 			path = CountrySelectionEntity;
 			sourceTree = "<group>";
 		};
+		316B90AC2946203B0062DBC3 /* DetailRecovered */ = {
+			isa = PBXGroup;
+			children = (
+				316B90B7294621670062DBC3 /* DetailRecoveredEntity */,
+				316B90AD2946206D0062DBC3 /* DetailRecoveredViewController.swift */,
+				316B90AF294621290062DBC3 /* DetailRecoveredContract.swift */,
+				316B90B1294621350062DBC3 /* DetailRecoveredInteractor.swift */,
+				316B90B3294621420062DBC3 /* DetailRecoveredPresenter.swift */,
+				316B90B52946214E0062DBC3 /* DetailRecoveredRouter.swift */,
+			);
+			path = DetailRecovered;
+			sourceTree = "<group>";
+		};
+		316B90B7294621670062DBC3 /* DetailRecoveredEntity */ = {
+			isa = PBXGroup;
+			children = (
+				316B90B8294621880062DBC3 /* DetailRecoveredEntity.swift */,
+				316B90BA294639970062DBC3 /* DetalRecoveredData.swift */,
+			);
+			path = DetailRecoveredEntity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +198,7 @@
 			name = CovidInfo;
 			packageProductDependencies = (
 				316B90AA2942B1CC0062DBC3 /* Alamofire */,
+				316B90BD294645590062DBC3 /* Charts */,
 			);
 			productName = CovidInfo;
 			productReference = 316B907C29427BE20062DBC3 /* CovidInfo.app */;
@@ -190,6 +230,7 @@
 			mainGroup = 316B907329427BE20062DBC3;
 			packageReferences = (
 				316B90A92942B1CC0062DBC3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				316B90BC294645590062DBC3 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 316B907D29427BE20062DBC3 /* Products */;
 			projectDirPath = "";
@@ -219,16 +260,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				316B90B2294621350062DBC3 /* DetailRecoveredInteractor.swift in Sources */,
 				316B909C29429BF70062DBC3 /* CountrySelectionInteractor.swift in Sources */,
 				316B909829429BD00062DBC3 /* CountrySelectionViewController.swift in Sources */,
 				316B90A029429C0B0062DBC3 /* CountrySelectionRouter.swift in Sources */,
 				316B908429427BE20062DBC3 /* ViewController.swift in Sources */,
+				316B90B9294621880062DBC3 /* DetailRecoveredEntity.swift in Sources */,
 				316B90A429429CFE0062DBC3 /* CountrySelectionTableViewCell.swift in Sources */,
 				316B908029427BE20062DBC3 /* AppDelegate.swift in Sources */,
 				316B909A29429BE60062DBC3 /* CountrySelectionContract.swift in Sources */,
+				316B90AE2946206D0062DBC3 /* DetailRecoveredViewController.swift in Sources */,
+				316B90B0294621290062DBC3 /* DetailRecoveredContract.swift in Sources */,
 				316B909E29429C020062DBC3 /* CountrySelectionPresenter.swift in Sources */,
+				316B90B4294621420062DBC3 /* DetailRecoveredPresenter.swift in Sources */,
+				316B90BB294639970062DBC3 /* DetalRecoveredData.swift in Sources */,
 				316B90A82942A2220062DBC3 /* CountrySelectionEntity.swift in Sources */,
 				316B908229427BE20062DBC3 /* SceneDelegate.swift in Sources */,
+				316B90B62946214E0062DBC3 /* DetailRecoveredRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +506,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		316B90BC294645590062DBC3 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -465,6 +521,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 316B90A92942B1CC0062DBC3 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		316B90BD294645590062DBC3 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 316B90BC294645590062DBC3 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
