@@ -29,5 +29,3 @@ class DetailDeathInteractor: PresenterToInteractorDetailDeathProcotol {
         }
     } 
 }
-//https://public.richdataservices.com/rds/api/query/covid19/jhu_county/tabulate?dims=date_stamp,iso3166_1&where=(year_stamp=2020) AND (iso3166_1=\(codeValue!))&measure=cnt_death:SUM(cnt_death)&inject=true&metadata=true&orderBy=date_stamp ASC,iso3166_1 ASC&totals=true&format=amcharts
-//https://public.richdataservices.com/rds/api/query/covid19/jhu_country/select?cols=date_stamp,cnt_death&where=(iso3166_1=US)AND(year_stamp=2020)&format=amcharts&limit=5000

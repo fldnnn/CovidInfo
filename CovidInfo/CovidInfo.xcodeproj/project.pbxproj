@@ -37,6 +37,12 @@
 		31BCD9922946C8C700FCC906 /* DetailDeathRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD9912946C8C700FCC906 /* DetailDeathRouter.swift */; };
 		31BCD9952946C8EB00FCC906 /* DetailDeathEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD9942946C8EB00FCC906 /* DetailDeathEntity.swift */; };
 		31BCD9982946CE8800FCC906 /* AMChart in Frameworks */ = {isa = PBXBuildFile; productRef = 31BCD9972946CE8800FCC906 /* AMChart */; };
+		31BCD99C2946F9E300FCC906 /* DetailConfirmedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD99B2946F9E300FCC906 /* DetailConfirmedEntity.swift */; };
+		31BCD99E2946FA0500FCC906 /* DetailConfirmedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD99D2946FA0500FCC906 /* DetailConfirmedViewController.swift */; };
+		31BCD9A02946FA1800FCC906 /* DetailConfirmedContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD99F2946FA1800FCC906 /* DetailConfirmedContract.swift */; };
+		31BCD9A22946FA2600FCC906 /* DetailConfirmedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD9A12946FA2600FCC906 /* DetailConfirmedInteractor.swift */; };
+		31BCD9A42946FA3400FCC906 /* DetailConfirmedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD9A32946FA3400FCC906 /* DetailConfirmedPresenter.swift */; };
+		31BCD9A62946FA3F00FCC906 /* DetailConfirmedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BCD9A52946FA3F00FCC906 /* DetailConfirmedRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +75,12 @@
 		31BCD98F2946C8BE00FCC906 /* DetailDeathPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeathPresenter.swift; sourceTree = "<group>"; };
 		31BCD9912946C8C700FCC906 /* DetailDeathRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeathRouter.swift; sourceTree = "<group>"; };
 		31BCD9942946C8EB00FCC906 /* DetailDeathEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDeathEntity.swift; sourceTree = "<group>"; };
+		31BCD99B2946F9E300FCC906 /* DetailConfirmedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConfirmedEntity.swift; sourceTree = "<group>"; };
+		31BCD99D2946FA0500FCC906 /* DetailConfirmedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConfirmedViewController.swift; sourceTree = "<group>"; };
+		31BCD99F2946FA1800FCC906 /* DetailConfirmedContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConfirmedContract.swift; sourceTree = "<group>"; };
+		31BCD9A12946FA2600FCC906 /* DetailConfirmedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConfirmedInteractor.swift; sourceTree = "<group>"; };
+		31BCD9A32946FA3400FCC906 /* DetailConfirmedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConfirmedPresenter.swift; sourceTree = "<group>"; };
+		31BCD9A52946FA3F00FCC906 /* DetailConfirmedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConfirmedRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +130,7 @@
 		316B909329427C440062DBC3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				31BCD9992946F9BD00FCC906 /* DetailConfirmed */,
 				31BCD9882946C80900FCC906 /* DetailDeath */,
 				316B90AC2946203B0062DBC3 /* DetailRecovered */,
 				316B909629429B830062DBC3 /* CountrySelection */,
@@ -216,6 +229,27 @@
 			path = DetailDeathEntity;
 			sourceTree = "<group>";
 		};
+		31BCD9992946F9BD00FCC906 /* DetailConfirmed */ = {
+			isa = PBXGroup;
+			children = (
+				31BCD99A2946F9D100FCC906 /* DetailConfirmedEntity */,
+				31BCD99D2946FA0500FCC906 /* DetailConfirmedViewController.swift */,
+				31BCD99F2946FA1800FCC906 /* DetailConfirmedContract.swift */,
+				31BCD9A12946FA2600FCC906 /* DetailConfirmedInteractor.swift */,
+				31BCD9A32946FA3400FCC906 /* DetailConfirmedPresenter.swift */,
+				31BCD9A52946FA3F00FCC906 /* DetailConfirmedRouter.swift */,
+			);
+			path = DetailConfirmed;
+			sourceTree = "<group>";
+		};
+		31BCD99A2946F9D100FCC906 /* DetailConfirmedEntity */ = {
+			isa = PBXGroup;
+			children = (
+				31BCD99B2946F9E300FCC906 /* DetailConfirmedEntity.swift */,
+			);
+			path = DetailConfirmedEntity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -299,18 +333,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				316B90B2294621350062DBC3 /* DetailRecoveredInteractor.swift in Sources */,
+				31BCD99E2946FA0500FCC906 /* DetailConfirmedViewController.swift in Sources */,
 				316B909C29429BF70062DBC3 /* CountrySelectionInteractor.swift in Sources */,
+				31BCD9A42946FA3400FCC906 /* DetailConfirmedPresenter.swift in Sources */,
 				31BCD98E2946C8B500FCC906 /* DetailDeathInteractor.swift in Sources */,
 				316B909829429BD00062DBC3 /* CountrySelectionViewController.swift in Sources */,
 				316B90A029429C0B0062DBC3 /* CountrySelectionRouter.swift in Sources */,
 				31BCD98C2946C89A00FCC906 /* DetailDeathContract.swift in Sources */,
 				316B908429427BE20062DBC3 /* ViewController.swift in Sources */,
+				31BCD9A22946FA2600FCC906 /* DetailConfirmedInteractor.swift in Sources */,
 				316B90B9294621880062DBC3 /* DetailRecoveredEntity.swift in Sources */,
 				316B90A429429CFE0062DBC3 /* CountrySelectionTableViewCell.swift in Sources */,
 				316B908029427BE20062DBC3 /* AppDelegate.swift in Sources */,
 				31BCD9922946C8C700FCC906 /* DetailDeathRouter.swift in Sources */,
+				31BCD9A62946FA3F00FCC906 /* DetailConfirmedRouter.swift in Sources */,
 				31BCD98A2946C86400FCC906 /* DetailDeathViewController.swift in Sources */,
 				31BCD9902946C8BE00FCC906 /* DetailDeathPresenter.swift in Sources */,
+				31BCD99C2946F9E300FCC906 /* DetailConfirmedEntity.swift in Sources */,
 				316B909A29429BE60062DBC3 /* CountrySelectionContract.swift in Sources */,
 				316B90AE2946206D0062DBC3 /* DetailRecoveredViewController.swift in Sources */,
 				316B90B0294621290062DBC3 /* DetailRecoveredContract.swift in Sources */,
@@ -318,6 +357,7 @@
 				31BCD9952946C8EB00FCC906 /* DetailDeathEntity.swift in Sources */,
 				316B90B4294621420062DBC3 /* DetailRecoveredPresenter.swift in Sources */,
 				316B90BB294639970062DBC3 /* DetalRecoveredData.swift in Sources */,
+				31BCD9A02946FA1800FCC906 /* DetailConfirmedContract.swift in Sources */,
 				316B90A82942A2220062DBC3 /* CountrySelectionEntity.swift in Sources */,
 				316B908229427BE20062DBC3 /* SceneDelegate.swift in Sources */,
 				316B90B62946214E0062DBC3 /* DetailRecoveredRouter.swift in Sources */,

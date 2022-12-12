@@ -79,6 +79,7 @@
                     <connections>
                         <segue destination="vAp-Q9-vUY" kind="relationship" relationship="viewControllers" id="GTg-L0-e3b"/>
                         <segue destination="89z-SC-PWX" kind="relationship" relationship="viewControllers" id="pg2-Hd-fLq"/>
+                        <segue destination="uAo-1j-kaT" kind="relationship" relationship="viewControllers" id="XCb-35-zAk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncO-oZ-lQn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -99,7 +100,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2B3-fd-WR6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1735" y="810"/>
+            <point key="canvasLocation" x="1735" y="830"/>
+        </scene>
+        <!--Confirmed-->
+        <scene sceneID="5tG-DL-exc">
+            <objects>
+                <viewController id="uAo-1j-kaT" customClass="DetailConfirmedViewController" customModule="CovidInfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WZ8-Z1-dA7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mvX-bk-Daf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Confirmed" image="thermometer" catalog="system" selectedImage="thermometer" id="44T-vt-YSD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HU4-Oi-hsw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2555" y="830"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SHl-01-Fsl">
@@ -123,6 +140,7 @@
     <resources>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="heart.slash" catalog="system" width="128" height="115"/>
+        <image name="thermometer" catalog="system" width="81" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

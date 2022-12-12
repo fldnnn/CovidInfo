@@ -48,7 +48,7 @@ class DetailDeathViewController: UIViewController {
         set.colors = [NSUIColor(ciColor: .init(red: 0.10, green: 0.20, blue: 0.70))]
         set.axisDependency = .left
         set.setColor(UIColor.black)
-        set.lineWidth = 1.5
+        set.lineWidth = 2.0
         set.fillAlpha = 1
         set.fillColor = .black
         set.mode = .cubicBezier
